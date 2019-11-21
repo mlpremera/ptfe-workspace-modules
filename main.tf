@@ -22,7 +22,7 @@ module "networking" {
 }
 
   module "webserver" {
-  source  = "tap-tfe.digitalinnovation.dev/YOUR_ORG_NAME/webserver/azurerm"
+  source  = "tap-tfe.digitalinnovation.dev/mlaib-org/webserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -34,7 +34,7 @@ module "networking" {
 }
 
 module "appserver" {
-  source  = "tap-tfe.digitalinnovation.dev/YOUR_ORG_NAME/appserver/azurerm"
+  source  = "tap-tfe.digitalinnovation.dev/mlaib-org/appserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -46,7 +46,7 @@ module "appserver" {
 }
 
 module "dataserver" {
-  source  = "tap-tfe.digitalinnovation.dev/YOUR_ORG_NAME/dataserver/azurerm"
+  source  = "tap-tfe.digitalinnovation.dev/mlaib-org/dataserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
